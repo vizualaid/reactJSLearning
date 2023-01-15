@@ -21,17 +21,35 @@ https://www.youtube.com/watch?v=9VIiLJL0H4Y&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rx
     }
 -header
 -footer
-two types of components
+
+
+* Two types of components
 -stateless functional component
 
     funtion Welcome(props){
         return <h1>Hello, {props.name}</h1>;
     }
 -statefull class component
+
     Class extending Component class
+
     Render method returning HTML
     class Welcome extends React.Component{
         return() {
             return <h1>Hello, {This.props.name}</h1>;
         }
     }
+-Function Components are focus for biginners
+--are literally js function
+--they may accept some input properties(props) and return html that discribes the ui (jsx)
+
+
+The file extension ( 
+
+    function App() which 
+    return html 
+    {- wrraping div tag hadder img  etc} 
+    exported from App as default  
+    
+    )
+    as we make more complex app components inc.
