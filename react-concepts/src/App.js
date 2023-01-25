@@ -20,19 +20,21 @@
 // export default App;
 // import logo from "./logo.svg"
 import "./App.css"
+import Rendering from "./components/1Rendering/Rendering"
 // import ClassComponent from "./components/ClassComponent/ClassComponent"
 // import { WorkingWithMultipleStates } from "./components/Working With Multiple States/WorkingWithMultipleStates"
 // import WorkingWithMultipleStatesClass from "./components/Working With Multiple States/WorkingWithMultipleStatesClass"
 // import { LiftingTheStateUp } from "./components/LiftingTheStateUp/LifitingTheStateUp"
-import { Validation } from "./components/Validation/Validation"
+// import { Validation } from "./components/Validation/Validation"
 
 function App() {
   return (
     <div>
+      <Rendering></Rendering>
       {/* <WorkingWithMultipleStates></WorkingWithMultipleStates> */}
       {/* <WorkingWithMultipleStatesClass></WorkingWithMultipleStatesClass> */}
       {/* <LiftingTheStateUp></LiftingTheStateUp> */}
-      <Validation></Validation>
+      {/* <Validation></Validation> */}
       {/* <ClassComponent></ClassComponent> */}
     </div>
   )

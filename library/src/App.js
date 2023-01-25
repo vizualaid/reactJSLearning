@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import BookCreate from './components/BookCreate';
 import BookList from './components/BookList';
 import axios from 'axios'
@@ -7,9 +7,14 @@ function App() {
   
   const fetchBook=async()=>{
     const response=await axios.get('http://localhost:3001/books');
-    console.warn(response);
+    // console.warn(response);
+    setBooks(response);
   }
-  fetchBook();
+  // fetchBook();
+    useEffect(()=>{
+      fetchBook() 
+      },[]);
+
   const editBookById = (id, newTitle) => {
     const updatedBooks = books.map((book) => {
       if (book.id === id) {
