@@ -2,10 +2,12 @@
 - Stores  the Title of books read in local database using Json server Api.
 - Performs EDIT, DELETE, CREATE functions. 
 
+1.
 
-![image](https://user-images.githubusercontent.com/74894810/214788534-7bcb727b-7cdf-488d-80d3-56d3093c635c.png)
+![ezgif-3-2b40a422c8](https://user-images.githubusercontent.com/74894810/214788901-6e217184-61d4-4025-b00d-4f53ab6e7692.gif)
 
-
+.
+.
 
 
 # Getting Started with Create React App
