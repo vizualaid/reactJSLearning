@@ -1,4 +1,22 @@
 # reactJSLearning
+.
+#1.Libray Book List 
+- Stores  the Title of books read in local database using Json server Api.
+- Performs EDIT, DELETE, CREATE functions. 
+
+
+
+![ezgif-3-2b40a422c8](https://user-images.githubusercontent.com/74894810/214788901-6e217184-61d4-4025-b00d-4f53ab6e7692.gif)
+
+.
+.
+
+#2. React App Image Search using Unsplash Api 
+- This project involves creating a search images app using React, the Unsplash API, and the useAxios hook.
+- The app is styled using Tailwind CSS and has a skeleton loading page to improve the user experience.
+
+
+![](https://github.com/vizualaid/reactJSLearning/blob/main/pic/fin.gif)
 
 
 npm (short for Node Package Manager) is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js.
