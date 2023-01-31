@@ -1,3 +1,15 @@
+#Libray Book List 
+- Stores  the Title of books read in local database using Json server Api.
+- Performs EDIT, DELETE, CREATE functions. 
+
+1.
+
+![ezgif-3-2b40a422c8](https://user-images.githubusercontent.com/74894810/214788901-6e217184-61d4-4025-b00d-4f53ab6e7692.gif)
+
+.
+.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
