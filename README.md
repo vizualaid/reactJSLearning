@@ -24,50 +24,59 @@ npm (short for Node Package Manager) is a package manager for the JavaScript pro
 
 npm is  package manager
 npm  -v
-import { createContext, useState } from "react";
-import Images from "./components/Images";
-import Jumbutron from "./components/Jumbutron";
-import SearchField from "./components/SearchField";
-import useAxios from "./hooks/useAxios";
-
-// Create Context
-export const ImageContext = createContext();
-
-function App() {
-  const [searchImage, setSearchImage] = useState('');
-  const { response, isLoading, error, fetchData } = useAxios(`search/photos?page=1&query=cats&client_id=${process.env.REACT_APP_ACCESS_KEY}`);
-
-  const value = {
-    response,
-    isLoading,
-    error,
-    fetchData,
-    searchImage,
-    setSearchImage
-  }
-
-  return (
-    <ImageContext.Provider value={value}>
-      <Jumbutron>
-        <SearchField />
-      </Jumbutron>
-      <Images />
-    </ImageContext.Provider>
-  );
-}
-
-export default App;
-
 cd booklist
   npm start
-
-bookcreate
-bookList
 npm install create-react-app -g
 create-react-app<project_name>
 
 files explained
 https://www.youtube.com/watch?v=9VIiLJL0H4Y&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=3
+Render Multiple Elements inside ReactDOM.render()
+
+ReactDOM.render(
+[
+<h1> Thapa Technical </h1>,
+<p> Plz like and share to all </p>,
+<h2> plz subscribe my channel </h2>,
+],
+document.getElementById("root")
+);
+React.fragment is fastest or <> </>
+Inside fragment or enclosed tags
+On v16 and above 
+As a array [
+jsx element ,
+ jsx element 2,
+ ]
+
+Jsx expression using { var name + ” ” +var2 }
+Template Literals in JSX
+console.log(`my name is ${fname}`)
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+const name= 'Isha Kunwar';
+const cdate=new Date().toLocaleDateString();
+const ctime=new Date().toLocaleTimeString()
+class App extends React.Component {
+ render() {
+   return (
+     <>
+      <h1>My name is {name}</h1>
+      <p> todays date is {cdate} </p>
+      <p>current Time is {ctime}</p>
+     </>
+   )
+ }
+}
+
+
+ReactDOM.render(
+ <App />,
+ document.getElementById('container')
+);
+
+
 
 4 nested components come together to make the web
 -root(app){
